@@ -23,11 +23,11 @@ $(function () {
         top: "0%",
       },
       {
-        width: "600px",
-        height: "600px",
+        width: "550px",
+        height: "550px",
         duration: 10,
         opacity: 1,
-        top: "10%",
+        top: "17%",
       },
       0
     );
@@ -294,10 +294,33 @@ $(function () {
             containerAnimation: scrollTween,
             onEnter: (self) => (counter.innerText = num), // 스크롤의 위치가 start를 지나 앞으로 이동할때 .counter .now에 적어준다.
             onEnterBack: (self) => (counter.innerText = num), //  스크롤의 위치가 end를 지나 뒤으로 이동할때 .counter .now에 적어준다.
-            markers: true,
+            // markers: true,
           });
         });
       }); // 04. textBox.end
+    },
+  });
+
+  // 05. 흩어지는 트리거
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".con03",
+      start: "-200% 50%",
+      end: "35% 50%",
+      scrub: 1,
+      onEnter: function () {
+        $(".con03").addClass("active");
+      },
+      onLeave: function () {
+        $(".con03").removeClass("active");
+      },
+      onEnterBack: function () {
+        $(".con03").addClass("active");
+      },
+      onLeaveBack: function () {
+        $(".con03").removeClass("active");
+      },
+      markers: true,
     },
   });
 });

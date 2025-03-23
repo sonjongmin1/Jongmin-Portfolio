@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New-Portfolio</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="jQuery/jquery-3.3.1.min.js"></script>
+    <script src="./plugin/splitting.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
@@ -12,7 +20,7 @@
   <body>
     <div class="wrap">
       <nav>
-        <div>SONJONGMIN</div>
+        <div><a href="#">SONJONGMIN</a></div>
         <ul class="menu">
           <li><a href="#">HOME</a></li>
           <li><a href="#">ABOUT</a></li>
@@ -22,7 +30,10 @@
         </ul>
       </nav>
       <header>
-        <div>Front-End Developer</div>
+        <div>
+          <span>Front-End</span><br />
+          Developer
+        </div>
       </header>
       <section class="con01">
         <span class="circle"></span>
@@ -33,7 +44,7 @@
         <div class="txt3">AGAIN</div>
         <div class="txt4">AGAIN</div>
         <div class="txt5">AGAIN</div>
-        <span
+        <span class="en"
           >"처음엔 노력한 결과가 보이지 않더라도,<br />끝까지 반복하며 선명한
           결과를 만들어가는 개발자가 되겠습니다."</span
         >
@@ -42,7 +53,7 @@
         <div class="counter">
           <span class="now"></span>
           <!-- 현재리스트번호 -->
-          <span class="all">/6</span>
+          <span class="all">/ 6</span>
           <!-- 전체리스트번호 -->
         </div>
         <ul>
@@ -53,8 +64,8 @@
                 <img src="./images/work1.jpg" alt="이미지1" />
               </div>
               <div class="textBox">
-                <p class="title">Site name</p>
-                <p class="text">UI/UX Design, Web Publishing</p>
+                <p class="title">NIKE</p>
+                <p class="text">2025.02 ~ 2025.02</p>
               </div>
             </a>
           </li>
@@ -65,8 +76,8 @@
                 <img src="./images/work2.jpg" alt="이미지2" />
               </div>
               <div class="textBox">
-                <p class="title">Site name</p>
-                <p class="text">UI/UX Design, Web Publishing</p>
+                <p class="title">SOOP</p>
+                <p class="text">2024.10 ~ 2024.11</p>
               </div>
             </a>
           </li>
@@ -77,8 +88,8 @@
                 <img src="./images/work3.jpg" alt="이미지3" />
               </div>
               <div class="textBox">
-                <p class="title">Site name</p>
-                <p class="text">UI/UX Design, Web Publishing</p>
+                <p class="title">PORTFOLIO</p>
+                <p class="text">2025.02 ~ 2025.03</p>
               </div>
             </a>
           </li>
@@ -89,8 +100,8 @@
                 <img src="./images/work4.jpg" alt="이미지4" />
               </div>
               <div class="textBox">
-                <p class="title">Site name</p>
-                <p class="text">UI/UX Design, Web Publishing</p>
+                <p class="title">HYUNGIELITE</p>
+                <p class="text">2025.01 ~ 2025.01</p>
               </div>
             </a>
           </li>
@@ -101,8 +112,8 @@
                 <img src="./images/work5.jpg" alt="이미지5" />
               </div>
               <div class="textBox">
-                <p class="title">Site name</p>
-                <p class="text">UI/UX Design, Web Publishing</p>
+                <p class="title">TOURIST WEBSITE</p>
+                <p class="text">2025.02 ~ 2025.02</p>
               </div>
             </a>
           </li>
@@ -120,9 +131,28 @@
           </li>
         </ul>
       </section>
+      <section class="con03">
+        <div class="skill">SKILLS</div>
+        <ul>
+          <li><a href="#">아이템1</a></li>
+          <li><a href="#">아이템2</a></li>
+          <li><a href="#">아이템3</a></li>
+          <li><a href="#">아이템4</a></li>
+          <li><a href="#">아이템5</a></li>
+          <li><a href="#">아이템6</a></li>
+          <li><a href="#">아이템7</a></li>
+          <li><a href="#">아이템8</a></li>
+          <li><a href="#">아이템9</a></li>
+          <li><a href="#">아이템10</a></li>
+          <li><a href="#">아이템11</a></li>
+          <li><a href="#">아이템12</a></li>
+        </ul>
+      </section>
+      <section></section>
       <footer></footer>
     </div>
     <script src="./js/main.js"></script>
     <script src="./js/gsap.js"></script>
+    <script src="./js/splitting.js"></script>
   </body>
 </html>
